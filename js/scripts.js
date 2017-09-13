@@ -10,6 +10,16 @@ $(document).ready(function() {
 
   });
 
+  $("#formTwo").submit(function(event) {
+    var yourageInput = $("input#yourAge").val();
+
+    $(".yourAge").text(yourageInput);
+
+    $("#ageOutput").show();
+
+    event.preventDefault();
+
+  });
 
 
 
